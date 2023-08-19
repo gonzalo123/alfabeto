@@ -80,7 +80,7 @@ all.addEventListener("click", drawAll);
 
 function drawAll() {
     placeTextOnId('start', '▶');
-    placeTextOnId('→', '');
+    placeTextOnId('next', '');
     placeTextOnId('all', '');
     game_mode = false;
     game_index = 0;
