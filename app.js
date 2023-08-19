@@ -82,7 +82,8 @@ function drawAll() {
     placeTextOnId('start', 'Start');
     placeTextOnId('next', '');
     placeTextOnId('all', '');
-
+    game_mode = false;
+    game_index = 0;
     GREEK_LETTERS.forEach(letter => {
         placeTextOnId(letter.name, `${letter.lower} ${letter.upper}`);
     });
@@ -114,7 +115,6 @@ function resetGame() {
 }
 
 function startGame() {
-    closePopup();
     game_mode = true;
     game_index = 0;
     placeTextOnId('start', 'Start');
