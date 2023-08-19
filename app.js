@@ -109,10 +109,12 @@ function gameStep() {
 
 function resetGame() {
     game_mode = false;
+    closePopup();
     drawAll();
 }
 
 function startGame() {
+    closePopup();
     game_mode = true;
     game_index = 0;
     placeTextOnId('start', 'Start');
@@ -123,7 +125,6 @@ function startGame() {
 
 document.addEventListener("keydown", (e) => {
     if (e.key === "c") {
-        closePopup();
         startGame();
     }
 
