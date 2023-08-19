@@ -69,7 +69,20 @@ letters.forEach(letter => {
 const closePopupButton = document.getElementById("popup");
 closePopupButton.addEventListener("click", closePopup);
 
+const start = document.getElementById("start");
+start.addEventListener("click", startGame);
+
+const next = document.getElementById("next");
+next.addEventListener("click", gameStep);
+
+const all = document.getElementById("all");
+all.addEventListener("click", drawAll);
+
 function drawAll() {
+    placeTextOnId('start', 'Start');
+    placeTextOnId('next', '');
+    placeTextOnId('all', '');
+
     GREEK_LETTERS.forEach(letter => {
         placeTextOnId(letter.name, `${letter.lower} ${letter.upper}`);
     });
@@ -102,6 +115,9 @@ function resetGame() {
 function startGame() {
     game_mode = true;
     game_index = 0;
+    placeTextOnId('start', 'Start');
+    placeTextOnId('next', 'Next');
+    placeTextOnId('all', 'Reset');
     clear();
 }
 

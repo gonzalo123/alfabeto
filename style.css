@@ -14,8 +14,21 @@ body {
     grid-gap: 10px;
 }
 
+
 .letter {
     background-color: #fff;
+    font-size: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #ccc;
+    width: 80px;
+    height: 80px;
+}
+
+.button {
+    background-color: #797979;
+    color: white;
     font-size: 24px;
     display: flex;
     justify-content: center;

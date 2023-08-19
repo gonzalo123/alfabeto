@@ -7,11 +7,11 @@ espacio - escribe una letra
 Enter - Vuelve a escribir todo el alfabeto.
 
 Idea del juego:
-* Limpio el tablero (letra c) y mentalmente digo la siguiente letra. 
-* Le doy a espacio y me la muestra. 
-* Si he acertado voy a la siguiente (pulso espacio). 
-* Si he fallado empiezo de nuevo (pulso c)
-* Si le doy a Enter termino el juego
+* Start (o letra c) Limpio el tablero y mentalmente digo la siguiente letra. 
+* Next (o espacio) y me la muestra. 
+* Next (o espacio) Si he acertado voy a la siguiente. 
+* Si he fallado empiezo de nuevo (Start o letra c)
+* Reset o Enter para terminar el juego
 
 <a href="https://gonzalo123.github.io/alfabeto/">Alfabeto</a>
 
