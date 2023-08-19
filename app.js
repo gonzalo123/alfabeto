@@ -79,8 +79,8 @@ const all = document.getElementById("all");
 all.addEventListener("click", drawAll);
 
 function drawAll() {
-    placeTextOnId('start', 'Start');
-    placeTextOnId('next', '');
+    placeTextOnId('start', '▶');
+    placeTextOnId('→', '');
     placeTextOnId('all', '');
     game_mode = false;
     game_index = 0;
@@ -117,9 +117,9 @@ function resetGame() {
 function startGame() {
     game_mode = true;
     game_index = 0;
-    placeTextOnId('start', 'Start');
-    placeTextOnId('next', 'Next');
-    placeTextOnId('all', 'Reset');
+    placeTextOnId('start', '▶');
+    placeTextOnId('next', '⇥');
+    placeTextOnId('all', '↺');
     clear();
 }
 
